@@ -1,10 +1,29 @@
 <header>
-    <div class="logo"><a href="#" routerLink="/" class="logo">LogoPlaceholder</a></div>
+    <div class="logo"><a class="logo-a" href="#" routerLink="/"><img src="../../assets/images/logo/logo.png" alt=""></a></div>
     <div class="container">
         <nav>
             <ul>
+                <li class="products-menu">
+                    <a class="menu-toggler" (click)="toggleMenu()"><mat-icon>card_giftcard</mat-icon>Products</a>    
+                    <div class="menu" *ngIf="isToggled">
+                        <a href="#" routerLink="/" class="menu-item"><mat-icon>room</mat-icon>Balloons</a>
+                        <a href="#" routerLink="/" class="menu-item"><mat-icon> local_florist</mat-icon>Bouquets</a>
+                        <a href="#" routerLink="/" class="menu-item"><mat-icon>whatshot</mat-icon>Candles</a>
+                        <a href="#" routerLink="/" class="menu-item last-menu-item"><mat-icon>cake</mat-icon>Dessert Stands</a>
+                    </div>            
+                </li>
                 <li>
-                    <a href="#" routerLink="/cart-page">Cart</a>
+                    <a href="#" routerLink="/login"><mat-icon>account_circle</mat-icon>Login</a>
+                </li>
+                <li>
+                    <a href="#" routerLink="/register"><mat-icon>note_add</mat-icon>Register</a>
+                </li>
+                <li>
+                    <a href="#" routerLink="/about-us"><mat-icon>contact_support</mat-icon>About Us</a>
+                </li>
+                
+                <li>
+                    <a href="#" routerLink="/cart-page" class="last-list-item"><mat-icon>shopping_cart</mat-icon>Cart</a>
                 </li>
             </ul>
         </nav>

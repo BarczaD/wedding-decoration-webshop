@@ -1,6 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
 @import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
 
+$dark-color: #ff1dd9;
+$light-color: rgb(255, 242, 253);
+$content-color: rgb(255, 186, 245);
+
 *{
     box-sizing: border-box;
 }
@@ -9,8 +13,31 @@ body {
     margin: 0;
     font-family: "Quicksand", sans-serif;
     font-size: 18px;
+    background: $light-color;
+    margin: 0 auto;
+}
+
+.content {
+    height: 100%;
+    background: $content-color;
+    width: 75%;
+    list-style-type: none;
+    display: inline-block;
+    margin: 0;
+    margin-left: 12.5%;
+    margin-right: 12.5%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
 }
 
 a {
     text-decoration: none;
 }
+
+footer {
+    background: $dark-color;
+    color: $light-color;
+}
+
+html, body { height: 100%; width: 100%; }
