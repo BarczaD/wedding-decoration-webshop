@@ -12,13 +12,12 @@ $content-color: rgb(255, 186, 245);
 }
 
 .product-card {
-    width: 100px;
+    width: 150px;
     height: 300px;
+    margin-right: 20px;
     float: left;
     margin-top: 50px;
     background: $light-color;
-
-    
 
     border:3px solid $dark-color;
     border-radius: 10px;
