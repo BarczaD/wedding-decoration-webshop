@@ -27,6 +27,7 @@ import { provideAuth,getAuth } from '@angular/fire/auth';
 import { provideFirestore,getFirestore } from '@angular/fire/firestore';
 import { provideStorage,getStorage } from '@angular/fire/storage';
 import {AngularFireModule, FIREBASE_OPTIONS} from '@angular/fire/compat';
+import { ProductsComponent } from './pages/products/products.component';
 
 
 
@@ -42,7 +43,8 @@ import {AngularFireModule, FIREBASE_OPTIONS} from '@angular/fire/compat';
     CartComponent,
     FooterComponent,
     AccountComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    ProductsComponent
   ],
   imports: [
     BrowserModule,

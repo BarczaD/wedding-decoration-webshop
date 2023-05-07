@@ -4,6 +4,7 @@ import { Router } from '@angular/router';
 import { User } from 'src/models/User';
 import { RegisterService } from '../../services/register/register.service';
 import { AuthService } from 'src/app/services/auth/auth.service';
+import { UserService } from 'src/app/services/user/user.service';
 
 
 @Component({
@@ -17,7 +18,7 @@ export class RegisterComponent {
 
 
 
-  constructor(private authService: AuthService, private router: Router) {}
+  constructor(private authService: AuthService, private router: Router, private userService: UserService) {}
 
   registerForm = new FormGroup({
     email: new FormControl('', [Validators.required, Validators.email]),
@@ -33,7 +34,11 @@ export class RegisterComponent {
         id: cred.user?.uid as string,
         email: this.registerForm.get('email')?.value
       }
-      this.router.navigateByUrl('/login');
+      this.userService.create(user).then(_ => {
+        console.log('User added.');
+      }).catch(error => {
+        alert(error);
+      })
     }).catch(error => {
       alert(error);
     })
