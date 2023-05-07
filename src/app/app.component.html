@@ -7,13 +7,7 @@
                     <a href="#" routerLink="/home"><mat-icon>home</mat-icon>Home</a>
                 </li>
                 <li class="products-menu">
-                    <a class="menu-toggler" (click)="toggleMenu()"><mat-icon>card_giftcard</mat-icon>Products</a>    
-                    <div class="menu" *ngIf="isToggled">
-                        <a routerLink="/" class="menu-item"><mat-icon>room</mat-icon>Balloons</a>
-                        <a routerLink="/" class="menu-item"><mat-icon> local_florist</mat-icon>Bouquets</a>
-                        <a routerLink="/" class="menu-item"><mat-icon>whatshot</mat-icon>Candles</a>
-                        <a routerLink="/" class="menu-item last-menu-item"><mat-icon>cake</mat-icon>Dessert Stands</a>
-                    </div>            
+                    <a routerLink="/products"><mat-icon>card_giftcard</mat-icon>Products</a>               
                 </li>
                 <li *ngIf="!(loggedInUser)">
                     <a  routerLink="/login"><mat-icon>account_circle</mat-icon>Login</a>

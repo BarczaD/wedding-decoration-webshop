@@ -7,16 +7,17 @@ import { BrowserModule } from '@angular/platform-browser';
 import { CartComponent } from './pages/cart/cart.component';
 import { AccountComponent } from './pages/account/account.component';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
+import { ProductsComponent } from './pages/products/products.component';
 
 const routes: Routes = [
   {path:'', component: HomeComponent},
   {path:'home', component: HomeComponent},
   {path:'login', component: LoginComponent},
   {path:'register', component: RegisterComponent},
-  {path: 'cart', component: CartComponent},
+  {path:'cart', component: CartComponent},
   {path:'account', component: AccountComponent},
+  {path:'products', component: ProductsComponent},
   {path:'**', component: NotFoundComponent}
-  
 ];
 
 @NgModule({
