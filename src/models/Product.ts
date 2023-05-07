@@ -1,6 +1,5 @@
 export interface Product {
-    id: number;
+    id: string;
     name: string;
     photo_url: string;
-    comments: Array<Comment>;
 }
