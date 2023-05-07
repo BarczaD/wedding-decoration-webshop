@@ -1,3 +1,33 @@
+$dark-color: #ff1dd9;
+$light-color: rgb(255, 242, 253);
+$content-color: rgb(255, 186, 245);
+
 .products-container {
+    width: 75%;
+    height: 90%;
+    margin: auto;
+    text-align: center;
+
+    background: $content-color;
+}
+
+.product-card {
+    width: 100px;
+    height: 300px;
+    float: left;
+    margin-top: 50px;
+    background: $light-color;
+
     
+
+    border:3px solid $dark-color;
+    border-radius: 10px;
+}
+
+
+
+thead {
+    width: 75px;
+    height: 290px;
+
 }
