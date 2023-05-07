@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "web-framework-course": {
+      "hosting": {
+        "wedding-decoration-webshop": [
+          "lovebirds-decor"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "web-framework-course"
+  }
+}

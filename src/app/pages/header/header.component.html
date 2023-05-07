@@ -3,6 +3,9 @@
     <div class="container">
         <nav>
             <ul>
+                <li>
+                    <a href="#" routerLink="/home"><mat-icon>home</mat-icon>Home</a>
+                </li>
                 <li class="products-menu">
                     <a class="menu-toggler" (click)="toggleMenu()"><mat-icon>card_giftcard</mat-icon>Products</a>    
                     <div class="menu" *ngIf="isToggled">
@@ -13,17 +16,19 @@
                     </div>            
                 </li>
                 <li>
-                    <a href="#" routerLink="/login"><mat-icon>account_circle</mat-icon>Login</a>
+                    <a href="#" routerLink="/login" *ngIf="!isLoggedIn"><mat-icon>account_circle</mat-icon>Login</a>
                 </li>
                 <li>
-                    <a href="#" routerLink="/register"><mat-icon>note_add</mat-icon>Register</a>
+                    <a href="#" routerLink="/register" *ngIf="!isLoggedIn"><mat-icon>note_add</mat-icon>Register</a>
                 </li>
-                <li>
-                    <a href="#" routerLink="/home"><mat-icon>contact_support</mat-icon>About Us</a>
+                <li *ngIf="isLoggedIn">
+                    <a  href="#" routerLink="/account" ><mat-icon>account_circle</mat-icon>My Account</a>
                 </li>
-                
                 <li>
                     <a href="#" routerLink="/cart" class="last-list-item"><mat-icon>shopping_cart</mat-icon>Cart</a>
+                </li>
+                <li *ngIf="isLoggedIn">
+                    <a href="#" routerLink="/cart" class="last-list-item"><mat-icon>exit_to_app</mat-icon>Logout</a>
                 </li>
             </ul>
         </nav>

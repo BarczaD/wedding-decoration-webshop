@@ -1,0 +1,16 @@
+<div class="form-div">
+    <form (submit)="login()" [formGroup]="loginForm">
+        <div class="labels">
+            <label for="username">Username </label><br><br>
+            <label for="password">Password </label>
+        </div>
+        <div class="input-fields">
+            <input type="text" [formControl]="loginForm.controls.username" name="username" id="username"><br><br>
+            <input type="password" [formControl]="loginForm.controls.password" name="password" id="password">
+        </div>
+
+        <div class="buttons">
+            <input type="submit" value="Login" class="button">
+        </div>
+    </form>
+</div>

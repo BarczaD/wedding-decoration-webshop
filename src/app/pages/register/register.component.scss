@@ -1,0 +1,42 @@
+$dark-color: #a8008c;
+$light-color: rgb(255, 242, 253);
+$content-color: rgb(255, 186, 245);
+
+.reg-content {
+    width: 80%;
+    margin: auto;
+}
+
+.form-div {
+    width: 50%;
+    margin: auto;
+    justify-content: center;
+    margin-top: 50px;
+    text-align:right;
+}
+
+.input-fields {
+    font-size: large;
+    margin-bottom: 30px;
+    float:left;
+}
+
+
+
+.buttons {
+text-align: center;  
+}
+
+
+a {
+    padding-left: 50px;
+}
+
+
+.labels {
+    color: $dark-color;   
+    font-size: large;
+    font-weight: 300;
+    padding-right: 30px;
+    float:left;
+}

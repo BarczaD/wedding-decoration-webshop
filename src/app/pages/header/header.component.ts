@@ -9,6 +9,7 @@ import { Component } from '@angular/core';
 export class HeaderComponent {
 
   isToggled:boolean = false;
+  isLoggedIn:boolean = false;
   toggleMenu() : void {
     this.isToggled = !this.isToggled;
   }

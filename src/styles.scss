@@ -12,6 +12,7 @@ $content-color: rgb(255, 186, 245);
 body {
     margin: 0;
     font-family: "Quicksand", sans-serif;
+    justify-content: center;
     font-size: 18px;
     background: $light-color;
     margin: 0 auto;
@@ -40,6 +41,19 @@ a {
 footer {
     background: $dark-color;
     color: $light-color;
+}
+
+.form-div {
+    display: flex;
+    justify-content: center;
+    background: $light-color;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border:3px solid $dark-color;
+    border-radius: 10px;
+    width: 50%;
 }
 
 html, body { height: 100%; width: 100%; }
