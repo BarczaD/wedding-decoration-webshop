@@ -26,9 +26,7 @@ export class RegisterComponent {
 
 
   register() {
-    this.registerService.registerUser(this.registerForm.value).subscribe((result) =>{
-      console.warn(result);
-    })
+    
   }
 
 }

@@ -26,6 +26,7 @@ import { environment } from '../environments/environment';
 import { provideAuth,getAuth } from '@angular/fire/auth';
 import { provideFirestore,getFirestore } from '@angular/fire/firestore';
 import { provideStorage,getStorage } from '@angular/fire/storage';
+import {AngularFireModule} from '@angular/fire/compat';
 
 
 
@@ -54,7 +55,7 @@ import { provideStorage,getStorage } from '@angular/fire/storage';
     MatCardModule,
     ReactiveFormsModule,
     HttpClientModule,
-    provideFirebaseApp(() => initializeApp(environment.firebase)),
+    AngularFireModule,
     provideAuth(() => getAuth()),
     provideFirestore(() => getFirestore()),
     provideStorage(() => getStorage())
